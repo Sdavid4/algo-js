@@ -36,7 +36,7 @@ let boolean = true;
 while (boolean) {
     // Affichage du menu
     let string = prompt(
-        "Quelle opération veux-tu faire ?" +
+        "Quelle opération veux-tu faire ?\n" +
         "1 - Addition\n" +
         "2 - Soustraction\n" +
         "3 - Multiplication\n" +
@@ -44,32 +44,32 @@ while (boolean) {
         "5 - Quitter"
     );
 
-    switch (string) {
+    switch (choix) {
         case "1":
-            let number1 = validerNombre(prompt("Entrez le premier nombre :"));
-            let number2 = validerNombre(prompt("Entrez le second nombre :"));
-            if (number1 !== null && number2 !== null) {
-                console.log(`Résultat : ${addition(number1, number2)}`);
+            let add1 = validerNombre(prompt("Entrez le premier nombre :"));
+            let add2 = validerNombre(prompt("Entrez le second nombre :"));
+            if (add1 !== null && add2 !== null) {
+                console.log(`Résultat : ${addition(add1, add2)}`);
             } else {
                 console.log("Entrée invalide. Veuillez entrer des nombres.");
             }
             break;
 
         case "2":
-            let number3 = validerNombre(prompt("Entrez le premier nombre :"));
-            let number4 = validerNombre(prompt("Entrez le second nombre :"));
-            if (number3 !== null && number4 !== null) {
-                console.log(`Résultat : ${soustraction(number3, number4)}`);
+            let sub1 = validerNombre(prompt("Entrez le premier nombre :"));
+            let sub2 = validerNombre(prompt("Entrez le second nombre :"));
+            if (sub1 !== null && sub2 !== null) {
+                console.log(`Résultat : ${soustraction(sub1, sub2)}`);
             } else {
                 console.log("Entrée invalide. Veuillez entrer des nombres.");
             }
             break;
 
         case "3":
-            let number1 = validerNombre(prompt("Entrez le premier nombre :"));
-            let number2 = validerNombre(prompt("Entrez le second nombre :"));
-            if (number1 !== null && number2 !== null) {
-                console.log(`Résultat : ${multiplication(number1, number2)}`);
+            let mul1 = validerNombre(prompt("Entrez le premier nombre :"));
+            let mul2 = validerNombre(prompt("Entrez le second nombre :"));
+            if (mul1 !== null && mul2 !== null) {
+                console.log(`Résultat : ${multiplication(mul1, mul2)}`);
             } else {
                 console.log("Entrée invalide. Veuillez entrer des nombres.");
             }
